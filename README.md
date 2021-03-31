@@ -18,10 +18,14 @@ The architecture of our proposed DIN.
 2. Prepare training data. Run ```./scripts/Prepare_TrainData_HR_LR.py``` or ```./scripts/Prepare_TrainDate_HR_LR.m``` to generate HR/LR pairs with corresponding degradation models and scale factor. Modify ```./scripts/flags.py``` to configure ```traindata_path``` and ```savedata_path```.
 3. Test data preparation is as same as train data preparation.
 4. Configure ```./options/train/train_DIN_x2.json``` for your training.
-5. Run the command
+5. Run the command:
 ```
 CUDA_VISIBLE_DEVICES=0 python train.py -opt options/train/train_DIN_x2.json
 ```
 ## Test
 1. Prepare testing data. Choose public standard benchmark datasets and run ```./scripts/Prepare_TrainData_HR_LR.py``` or ```./scripts/Prepare_TrainDate_HR_LR.m``` to generate HR/LR pairs with corresponding degradation models and scale factor. Modify ```./scripts/flags.py``` to configure ```traindata_path``` and ```savedata_path```.
-2. 
+2. Configure ```./options/test/test_DIN_x2_BI.json``` for your testing.
+3. Run the command, PSNR/SSIM values are printed and you can find the reconstructed images in ```./result```.
+```
+CUDA_VISIBLE_DEVICES=0 python test.py -opt options/test/test_DIN_x2_BI.json
+```
