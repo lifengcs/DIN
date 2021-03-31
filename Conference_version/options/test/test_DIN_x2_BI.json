@@ -1,0 +1,33 @@
+{
+    "mode": "sr",
+    "use_cl": true,
+    "gpu_ids": [0],
+
+    "scale": 2,
+    "degradation": "BI",
+    "is_train": false,
+    "use_chop": false,
+    "rgb_range": 1,
+    "self_ensemble": false,
+
+    "datasets": {
+        "test_set1": {
+            "mode": "LRHR",
+            "dataroot_HR": "./your_hr_folder",
+            "dataroot_LR": "./your_lr_folder",
+            "data_type": "img"
+        }
+    },
+
+    "networks": {
+        "which_model": "DIN",
+        "num_features": 64,
+        "growthrate": 32,
+        "in_channels": 3,
+        "out_channels": 3
+    },
+
+    "solver": {
+        "pretrained_path": "./experiments/DIN_in3f64_x4/epochs/last_ckp.pth"
+    }
+}
