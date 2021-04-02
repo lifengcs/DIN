@@ -36,7 +36,7 @@ Here are the visual results.
 ## Citation
 If you find our work useful in your research or publications, please consider citing:
 ```
-@inproceedings{inproceedings,
+@inproceedings{International Joint Conference on Artificial Intelligence(ijcai),
 author = {Li, Feng and Cong, Runmin and Bai, Huihui and He, Yifan},
 year = {2020},
 month = {07},
@@ -45,7 +45,7 @@ title = {Deep Interleaved Network for Single Image Super-Resolution with Asymmet
 doi = {10.24963/ijcai.2020/75}
 }
 
-@unknown{unknown,
+@article{arXiv:2010.15689,
 author = {Li, Feng and Cong, Runmin and Bai, Huihui and He, Yifan and Zhao, Yao and Zhu, Ce},
 year = {2020},
 month = {10},
