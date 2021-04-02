@@ -29,3 +29,24 @@ CUDA_VISIBLE_DEVICES=0 python train.py -opt options/train/train_DIN_x2.json
 ```
 CUDA_VISIBLE_DEVICES=0 python test.py -opt options/test/test_DIN_x2_BI.json
 ```
+## citation
+If you find our work useful in your research or publications, please consider citing:
+```
+@inproceedings{inproceedings,
+author = {Li, Feng and Cong, Runmin and Bai, Huihui and He, Yifan},
+year = {2020},
+month = {07},
+pages = {537-543},
+title = {Deep Interleaved Network for Single Image Super-Resolution with Asymmetric Co-Attention},
+doi = {10.24963/ijcai.2020/75}
+}
+@unknown{unknown,
+author = {Li, Feng and Cong, Runmin and Bai, Huihui and He, Yifan and Zhao, Yao and Zhu, Ce},
+year = {2020},
+month = {10},
+pages = {},
+title = {Learning Deep Interleaved Networks with Asymmetric Co-Attention for Image Restoration}
+}
+```
+## Acknowledgement
+This code is built on [SRFBN](https://github.com/Paper99/SRFBN_CVPR19)(Pytorch), we thank the authors for sharing their code.
