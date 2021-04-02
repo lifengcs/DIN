@@ -15,7 +15,7 @@ The architecture of our proposed DIN.
 + opencv-python
 + Matlab
 ## Train
-1. Download trainning set [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/).
+1. Download trainning set [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) and [Flickr2K](https://github.com/sanghyun-son/EDSR-PyTorch)
 2. Prepare training data. Run ```./scripts/Prepare_TrainData_HR_LR.py``` or ```./scripts/Prepare_TrainDate_HR_LR.m``` to generate HR/LR pairs with corresponding degradation models and scale factor. Modify ```./scripts/flags.py``` to configure ```traindata_path``` and ```savedata_path```.
 3. Test data preparation is as same as train data preparation.
 4. Configure ```./options/train/train_DIN_x4.json``` for your training.
