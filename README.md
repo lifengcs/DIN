@@ -1,7 +1,7 @@
 # DIN
 ## Introduction 
 This is the implementation of DIN base on [*Deep Interleaved Network for Image Super-Resolution With Asymmetric Co-Attention*](https://arxiv.org/abs/2004.11814) and [*Learning Deep Interleaved Networks with Asymmetric Co-Attention for Image Restoration*](https://arxiv.org/abs/2010.15689). The ```Conference_version``` is for the former paper, which we take for example to edit the following instructions,  and the ```Enhance_version``` is for the later. 
-The architecture of our proposed DIN
+The architecture of our proposed DIN  
 ![image](https://github.comlifengshiwo/DIN/blob/d24fa5fb41de20c3578db619b43fedecaca15cab/Conference_version/figures/2.PNG)
 ## Environment
 + Python3
@@ -26,12 +26,12 @@ CUDA_VISIBLE_DEVICES=0 python train.py -opt options/train/train_DIN_x4.json
 ## Test
 1. Prepare testing data. Choose public standard benchmark datasets and run ```./scripts/Prepare_TrainData_HR_LR.py``` or ```./scripts/Prepare_TrainDate_HR_LR.m``` to generate HR/LR pairs with corresponding degradation models and scale factor. Modify ```./scripts/flags.py``` to configure ```traindata_path``` and ```savedata_path```.
 2. Configure ```./options/test/test_DIN_x4_BI.json``` for your testing.
-3. Run the command, PSNR/SSIM values are printed and you can find the reconstructed images in ```./result```.
+3. Run the command and PSNR/SSIM values are printed and you can find the reconstructed images in ```./result```.
 ```
 CUDA_VISIBLE_DEVICES=0 python test.py -opt options/test/test_DIN_x4_BI.json
 ```
 ## Results
-Here are the visual results.
+Here are the visual results.  
 ![image](https://github.com/lifengshiwo/DIN/blob/d24fa5fb41de20c3578db619b43fedecaca15cab/Conference_version/figures/1.PNG)
 ## Citation
 If you find our work useful in your research or publications, please consider citing:
