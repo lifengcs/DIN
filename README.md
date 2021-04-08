@@ -36,21 +36,22 @@ Here are the visual results.
 ## Citation
 If you find our work useful in your research or publications, please consider citing:
 ```
-@inproceedings{International Joint Conference on Artificial Intelligence(ijcai),
+@inproceedings{dinsr,
 author = {Li, Feng and Cong, Runmin and Bai, Huihui and He, Yifan},
+title = {Deep Interleaved Network for Single Image Super-Resolution with Asymmetric Co-Attention},
+booktitle = {International Joint Conference on Artificial Intelligence(ijcai)}
 year = {2020},
 month = {07},
 pages = {537-543},
-title = {Deep Interleaved Network for Single Image Super-Resolution with Asymmetric Co-Attention},
 doi = {10.24963/ijcai.2020/75}
 }
 
-@article{arXiv:2010.15689,
+@article{dinir,
 author = {Li, Feng and Cong, Runmin and Bai, Huihui and He, Yifan and Zhao, Yao and Zhu, Ce},
+title = {Learning Deep Interleaved Networks with Asymmetric Co-Attention for Image Restoration}
+booktitle = {arXiv:2010.15689}
 year = {2020},
 month = {10},
-pages = {},
-title = {Learning Deep Interleaved Networks with Asymmetric Co-Attention for Image Restoration}
 }
 ```
 ## Acknowledgement
